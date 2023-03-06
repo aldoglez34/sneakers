@@ -1,0 +1,22 @@
+@import "colors";
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+html,
+body {
+  scrollbar-color: gray black;
+}
+
+::-moz-selection {
+  color: black;
+  background: $orange;
+}
+
+::selection {
+  color: black;
+  background: $orange;
+}

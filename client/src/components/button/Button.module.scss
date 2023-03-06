@@ -1,0 +1,24 @@
+@import "../../styles/_colors";
+
+.linkButton {
+  color: black;
+  padding: 0px;
+  text-decoration: none !important;
+
+  &:hover {
+    color: $orange;
+  }
+}
+
+.activeLinkButton {
+  @extend .linkButton;
+
+  text-decoration: underline $orange !important;
+  text-decoration-thickness: 3px !important;
+
+  &:hover {
+    color: black;
+    text-decoration: underline $orange;
+    text-decoration-thickness: 3px;
+  }
+}
